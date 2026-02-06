@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up to DishDash</title>
+    <!-- goggle font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Satisfy&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/signup.css" />
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- IMAGE CONTAINER -->
+    <div class="image-container">
+        <img class="sign-up-image" src="images/sign-up-image.png" alt="hero-image" />
+        <div class="brand-logo">
+            <h2>Dish<span>Dash!</span><sup>&#8482;</sup></h2>
+            <p>Your cravings at your door step.</p>
+        </div>
+    </div>
+    <!-- MAIN -->
+    <main>
+        <!-- BRAND NAME -->
+        <div class="brand-name">
+            <h2>Dish<span>Dash!</span><sup>&#8482;</sup></h2>
+            <p>Your cravings at your door step.</p>
+        </div>
+        <!-- FORM-CONTAINER -->
+        <div class="form-container">
+            <p>fill in your details to sign up.</p>
+            <!-- FORM -->
+            <form action="/signup" method="post">
+                <!-- input container -->
+                <div class="input-container">
+                    <!-- username -->
+                    <input type="text" name="username" id="username" class="user-input" placeholder="username" />
+                    <p id="username-err" class="err"></p>
+                    <!-- password -->
+                    <input type="password" name="password" id="password" class="user-input" placeholder="password" />
+                    <p id="password-err" class="err"></p>
+                    <!-- confirm password -->
+                    <input type="password" name="confirm-password" id="confirm-password" class="user-input"
+                        placeholder="confirm password" />
+                    <p id="confirm-password-err" class="err"></p>
+                </div>
+                <!-- checkbox container -->
+                <div class="checkbox-container">
+                    <input class="checkbox" id="password-checkbox" type="checkbox" />
+                    <label class="checkbox-label" for="password-checkbox">show password</label>
+                </div>
+                <!-- login route -->
+                <p class="login-route">
+                    Already have an account
+                    <a href="/login" class="login-link">login</a>
+                </p>
+                <!-- sign up button -->
+                <div>
+                    <input type="submit" name="sign-up-btn" class="sign-up-btn" value="SIGN UP" />
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="src/signup.js"></script>
+</body>
+
+</html>

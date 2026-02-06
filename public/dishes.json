@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Egusi Soup",
+        "category": "local",
+        "price": 4000,
+        "image": "images/egusi_soup.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Oha Soup",
+        "category": "local",
+        "price": 4000,
+        "image": "images/oha_soup.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Ogbono Soup",
+        "category": "local",
+        "price": 4000,
+        "image": "images/ogbono_soup.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Amala & Ewedu",
+        "category": "local",
+        "price": 4000,
+        "image": "images/amala_and_ewedu.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Fried Rice",
+        "category": "foreign",
+        "price": 3500,
+        "image": "images/fried_rice.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Jollof Rice",
+        "category": "foreign",
+        "price": 3500,
+        "image": "images/jollof_rice.webp"
+    },
+    {
+        "id": 7,
+        "name": "Rice & Tomato Stew",
+        "category": "foreign",
+        "price": 3500,
+        "image": "images/rice_with_tomato_stew.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Coconut Rice",
+        "category": "foreign",
+        "price": 4000,
+        "image": "images/coconut_rice.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Pizza",
+        "category": "dessert",
+        "price": 10000,
+        "image": "images/pizza.jpg"
+    },
+    {
+        "id": 10,
+        "name": "French Fries",
+        "category": "dessert",
+        "price": 4000,
+        "image": "images/french_fries_with_sauce.webp"
+    },
+    {
+        "id": 11,
+        "name": "Beef Burger",
+        "category": "dessert",
+        "price": 3500,
+        "image": "images/beef_burger.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Chicken Wings",
+        "category": "dessert",
+        "price": 4000,
+        "image": "images/chicken_wings.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Vanilla Cake",
+        "category": "dessert",
+        "price": 15000,
+        "image":"images/vanilla_Cake.webp"
+    },
+    {
+        "id": 14,
+        "name": "Chocolate Cake",
+        "category": "dessert",
+        "price": 15000,
+        "image": "images/chocolate_cake.jpeg"
+    },
+    {
+        "id": 15,
+        "name": "Fried Chicken",
+        "category": "dessert",
+        "price": 30000,
+        "image": "images/fried_chicken.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Chicken Lap",
+        "category": "dessert",
+        "price": 4000,
+        "image": "images/chicken_lap.jpg"
+    }
+]

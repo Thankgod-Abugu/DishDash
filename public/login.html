@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to DishDash</title>
+    <!-- goggle font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Satisfy&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- BRAND NAME -->
+    <div class="brand-name">
+        <h2>Dish<span>Dash!</span><sup>&#8482;</sup></h2>
+        <p>Your cravings at your door step.</p>
+    </div>
+    <!-- FORM-CONTAINER -->
+    <div class="form-container">
+        <p>enter your user name and password.</p>
+        <!-- FORM -->
+        <form action="/login" method="post">
+            <!-- input container -->
+            <div class="input-container">
+                <!-- username -->
+                <input type="text" name="username" id="username" class="user-input" placeholder="enter username" />
+                <p id="username-err" class="err"></p>
+                <!-- password -->
+                <input type="password" name="password" id="password" class="user-input" placeholder="enter password" />
+                <p id="password-err" class="err"></p>
+            </div>
+            <!-- checkbox container -->
+            <div class="checkbox-container">
+                <input class="checkbox" id="password-checkbox" type="checkbox" />
+                <label class="checkbox-label" for="password-checkbox">show password</label>
+            </div>
+            <!-- signup route -->
+            <p class="sign-up-route">
+                Don't have an account <a href="/" class="sign-up-link">sign up</a>
+            </p>
+            <!-- login button -->
+            <div>
+                <input type="submit" name="login-btn" class="login-btn" value="LOGIN" />
+            </div>
+        </form>
+    </div>
+    <script src="src/login.js"></script>
+</body>
+
+</html>

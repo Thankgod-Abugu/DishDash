@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DishDash Home Page</title>
+    <!-- goggle font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Satisfy&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- BRAND LOGO -->
+        <div class="brand-logo">
+            <a href="#" title="DishDash">Dish<span>Dash!</span><sup>&#8482;</sup></a>
+        </div>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <!-- MOBILE NAV -->
+            <div class="mobile-nav" onclick="toggleMobileMenu()">
+                <svg class="mobile-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64zM199 305C189.6 295.6 189.6 280.4 199 271.1C208.4 261.8 223.6 261.7 232.9 271.1L319.9 358.1L406.9 271.1C416.3 261.7 431.5 261.7 440.8 271.1C450.1 280.5 450.2 295.7 440.8 305L337 409C327.6 418.4 312.4 418.4 303.1 409L199 305z" />
+                </svg>
+            </div>
+            <!-- NAV MENU -->
+            <ul class="nav-menu">
+                <li>
+                    <a class="nav-links" href="#home" onclick="closeMobileMenu()">Home</a>
+                </li>
+                <li>
+                    <a class="nav-links" href="#menu" onclick="closeMobileMenu()">Menu</a>
+                </li>
+                <li>
+                    <a class="nav-links" href="#about" onclick="closeMobileMenu()">About</a>
+                </li>
+                <li>
+                    <a class="nav-links" href="#contact" onclick="closeMobileMenu()">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="home-section">
+            <div class="hero-text-container">
+                <h1>Welcome to Dish<span>Dash!</span><sup>&#8482;</sup></h1>
+                <p>
+                    Get countless delivery from our restaurant: Fast Food, Dessert,
+                    Snacks, Meat & Seafood. Find the meal you crave, order and get door
+                    step delivery.
+                </p>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" class="menu-section">
+            <div class="section-containers">
+                <h2 class="section-title">Our Menu</h2>
+                <!-- underline -->
+                <div class="center-underline">
+                    <div class="section-title-underline"></div>
+                </div>
+
+                <!-- CAROUSEL -->
+                <div class="carousel">
+                    <div class="food-container">
+                        <img class="food-img" src="images/fried_rice.jpg" alt="fried rice">
+                        <p>fried rice</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/ogbono_soup.jpg" alt="ogbono soup">
+                        <p>ogbono soup</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/beef_burger.jpg" alt="beef burger">
+                        <p>beef burger</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/jollof_rice.webp" alt="jollof rice">
+                        <p>jollof rice</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/egusi_soup.jpg" alt="egusi soup">
+                        <p>egusi soup</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/pizza.jpg" alt="pizza">
+                        <p>pizza</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/rice_with_tomato_stew.jpg" alt="rice and tomato stew">
+                        <p>rice & tomato stew</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/oha_soup.jpg" alt="oha soup">
+                        <p>oha soup</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/fried_chicken.jpg" alt="fried chicken">
+                        <p>fried chicken</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/vanilla_Cake.webp" alt="cake">
+                        <p>cake</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/fried_rice.jpg" alt="fried rice">
+                        <p>fried rice</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/ogbono_soup.jpg" alt="ogbono soup">
+                        <p>ogbono soup</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/beef_burger.jpg" alt="beef burger">
+                        <p>beef burger</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/jollof_rice.webp" alt="jollof rice">
+                        <p>jollof rice</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/Egusi_soup.jpg" alt="egusi soup">
+                        <p>egusi soup</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/pizza.jpg" alt="pizza">
+                        <p>pizza</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/rice_with_tomato_stew.jpg" alt="rice and tomato stew">
+                        <p>rice & tomato stew</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/oha_soup.jpg" alt="oha soup">
+                        <p>oha soup</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/fried_chicken.jpg" alt="fried chicken">
+                        <p>fried chicken</p>
+                    </div>
+                    <div class="food-container">
+                        <img class="food-img" src="images/vanilla_Cake.webp" alt="cake">
+                        <p>cake</p>
+                    </div>
+                </div>
+                <!-- BTN CONTAINER -->
+                <div class="menu-btn-container">
+                    <a class="menu-btn view-chefs" href="#chefs">View Chefs</a>
+                    <a class="menu-btn order-now" href="menu.html">Order now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="section-containers">
+                <h2 class="section-title">About Us</h2>
+                <!-- underline -->
+                <div class="center-underline">
+                    <div class="section-title-underline"></div>
+                </div>
+
+                <!-- HISTORY CONTAINER -->
+                <div class="history-container">
+                    <!-- brand-history -->
+                    <div class="brand-history">
+                        <h2>Flame grilled<br>Since <span>2020</span></h2>
+                        <div class="history-write-up">
+                            <p>At DishDash<sup>&#8482;</sup>, we’ve been dedicated to the art of great cooking and
+                                community since our doors first opened in the heart of Nsukka. What began as a passion
+                                for authentic flavors has grown into a local landmark, where every meal is a celebration
+                                of quality and tradition. Each day, hundreds of students, professionals, and families
+                                walk through our doors, seeking the perfect balance of a home-cooked feel and
+                                professional culinary excellence.</p>
+                            <p>We’ve earned our place in the hearts of our guests by staying true to a simple promise:
+                                high-quality, great-tasting, and soul-satisfying food served in a warm, modern
+                                atmosphere. Whether you’re grabbing a quick lunch between lectures or order food, get
+                                instant delivery and have relaxed dinner with loved ones, DishDash is more than a
+                                restaurant, it’s where Nsukka comes to eat well.</p>
+                        </div>
+                    </div>
+                    <!-- brand-front-view -->
+                    <div class="brand-front-view">
+                        <img src="images/restaurant_front_view.png" alt="brand-front-view">
+                    </div>
+                </div>
+
+                <!-- TEAM CONTAINER -->
+                <div id="chefs" class="team-container">
+                    <h3>Our Team</h3>
+                    <!-- underline -->
+                    <div class="center-underline">
+                        <div class="section-title-underline"></div>
+                    </div>
+                    <!-- team pics container -->
+                    <div class="team-pics-container">
+                        <!-- major team members -->
+                        <div class="major-team-members">
+                            <div class="member-boxes">
+                                <img src="images/chief_chef.jpg" alt="CEO/chief chef">
+                                <div class="member-info">
+                                    <h4>Gordon</h4>
+                                    <h4>Ramsay</h4>
+                                    <p>CEO & Chief Chef</p>
+                                </div>
+                            </div>
+                            <div class="member-boxes">
+                                <img src="images/local_dish_chef.jpg" alt="local dish chef">
+                                <div class="member-info">
+                                    <h4>Hilda</h4>
+                                    <h4>Bacci</h4>
+                                    <p>Local Dish Chef</p>
+                                </div>
+                            </div>
+                            <div class="member-boxes">
+                                <img src="images/foreign_dish_chef.webp" alt="foreign dish chef">
+                                <div class="member-info">
+                                    <h4>Martin</h4>
+                                    <h4>Berasategui</h4>
+                                    <p>Foreign Dish Chef</p>
+                                </div>
+                            </div>
+                            <div class="member-boxes">
+                                <img src="images/fast_food_chef.jpg" alt="snacks and desserts chef">
+                                <div class="member-info">
+                                    <h4>Amanda</h4>
+                                    <h4>Gabriella</h4>
+                                    <p>Desserts Chef</p>
+                                </div>
+                            </div>
+                            <div class="member-boxes">
+                                <img src="images/chief_waitress.jpg" alt="chief waitress">
+                                <div class="member-info">
+                                    <h4>Jennifer</h4>
+                                    <h4>Anderson</h4>
+                                    <p>Chief Waitress</p>
+                                </div>
+                            </div>
+                            <div class="member-boxes">
+                                <img src="images/delivery_team_leader.png" alt="delivery team leader">
+                                <div class="member-info">
+                                    <h4>David</h4>
+                                    <h4>Ogbonna</h4>
+                                    <p>Delivery Team Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="section-containers">
+                <h2 class="section-title">Contact Us</h2>
+                <!-- underline -->
+                <div class="center-underline">
+                    <div class="section-title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- CONTACT INFO -->
+                    <div class="contact-info">
+                        <!-- INFO BOX -->
+                        <div class="info-box">
+                            <!-- info box heading -->
+                            <div class="info-box-heading">
+                                <div class="contact-icon-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                        <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                        <path
+                                            d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" />
+                                    </svg>
+                                </div>
+                                <h3>Our Location</h3>
+                            </div>
+
+                            <p>
+                                26 Ochieze Avenue,<br />
+                                Nsukka, Enugu State,<br />
+                                Nigeria.
+                            </p>
+                        </div>
+                        <!-- INFO BOX -->
+                        <div class="info-box">
+                            <!-- info box heading -->
+                            <div class="info-box-heading">
+                                <div class="contact-icon-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                        <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                        <path
+                                            d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z" />
+                                    </svg>
+                                </div>
+                                <h3>Get in touch</h3>
+                            </div>
+
+                            <!-- call links -->
+                            <div>
+                                <div>
+                                    <svg class="enquiries-icons whatsapp-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640">
+                                        <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                        <path
+                                            d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z" />
+                                    </svg><a class="phone-numbers" href="tel:+2347065063868">+234 706 506 3868</a>
+                                </div>
+                                <div>
+                                    <svg class="enquiries-icons call-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640">
+                                        <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                        <path
+                                            d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z" />
+                                    </svg><a class="phone-numbers" href="tel:+2348154898075">+234 815 489 8075</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MAP -->
+                        <div class="map-box">
+                            <iframe src="https://www.google.com/maps?q=Nsukka%2C%20Enugu%20State&output=embed"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+
+                        <form>
+                            <input class="name" type="text" name="name" placeholder="Your Name" required />
+                            <input class="email" type="email" name="email" placeholder="Your Email" required />
+                            <input class="subject" type="text" name="subject" placeholder="Subject" required />
+                            <textarea class="message" name="message" placeholder="Write your message..." required></textarea>
+
+                            <button class="send-msg-btn" type="submit" onclick="handleMsgSubmission()">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- MAIN FOOTER -->
+        <div class="main-footer">
+
+            <!--FOOTER BRAND NAME -->
+            <div class="footer-brand-name">
+                <h3>Dish<span>Dash!</span><sup>&#8482;</sup></h3>
+                <p>
+                    Get countless delivery from our restaurant: <br />
+                    Fast Food, Dessert, Snacks, Meat & Seafood. <br />
+                    Find the meal you crave, order and get door step delivery.
+                </p>
+            </div>
+
+            <!-- FOOTER ADDRESS -->
+            <div class="footer-address">
+                <h4>Our address</h4>
+                <!-- underline -->
+                <div class="heading-underline"></div>
+                <p>
+                    26 Ochieze Avenue,<br />
+                    Nsukka, Enugu State,<br />
+                    Nigeria.
+                </p>
+            </div>
+
+            <!-- SOCIALS AND ENQUIRIES -->
+            <div class="footer-socials">
+                <h4>follow us on</h4>
+                <!-- underline -->
+                <div class="heading-underline"></div>
+
+                <!-- SOCIALS ICONS CONTAINER -->
+                <div class="social-icons-container">
+                    <!-- facebook -->
+                    <a class="social-links facebook-link" title="facebook" href="https://www.facebook.com">
+                        <svg class="social-icons facebook-icon" aria-hidden="true" viewBox="0 0 16 16">
+                            <path
+                                d="M14.667 0H1.333C.597 0 0 .597 0 1.333v13.334C0 15.403.597 16 1.333 16h7.334v-6h-2V7.333h2V5.61c0-2.067 1.262-3.192 3.106-3.192.883 0 1.642.066 1.863.095v2.16h-1.279c-1.002 0-1.196.477-1.196 1.176v1.485h2.96L13.454 10h-2.293v6h3.506c.736 0 1.333-.597 1.333-1.333V1.333C16 .597 15.403 0 14.667 0z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- twitter -->
+                    <a class="social-links" title="twitter" href="https://www.x.com">
+                        <svg class="social-icons twitter-icon" aria-hidden="true" viewBox="0 0 14 12">
+                            <path
+                                d="M13.973 1.429a5.556 5.556 0 01-1.649.476A3.02 3.02 0 0013.587.231c-.554.34-1.169.59-1.823.728A2.792 2.792 0 009.668 0c-1.585 0-2.87 1.356-2.87 3.025 0 .24.026.47.074.692-2.385-.12-4.5-1.328-5.916-3.154-.249.443-.388.96-.388 1.522 0 1.051.507 1.976 1.276 2.52a2.754 2.754 0 01-1.3-.378v.036c0 1.467.988 2.692 2.302 2.97a2.776 2.776 0 01-1.29.052c.368 1.202 1.426 2.077 2.685 2.102A5.566 5.566 0 010 10.641 7.856 7.856 0 004.407 12c5.282 0 8.168-4.611 8.168-8.604 0-.13 0-.259-.01-.388.56-.424 1.05-.959 1.435-1.567l-.027-.012z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- instagram -->
+                    <a class="social-links" title="instagram" href="https://www.instagram.com">
+                        <svg class="social-icons instagram-icon" aria-hidden="true" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42a3.908 3.908 0 00-1.417.923c-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372a3.908 3.908 0 001.417-.923c.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942a3.908 3.908 0 00-.923-1.417A3.886 3.886 0 0013.24.42c-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.05 3.233c-.04.78-.17 1.203-.28 1.485-.15.374-.32.64-.6.92-.28.28-.55.453-.92.598-.28.11-.71.24-1.49.276-.85.038-1.1.047-3.24.047s-2.39-.01-3.24-.05c-.78-.04-1.21-.17-1.49-.28a2.49 2.49 0 01-.92-.6c-.28-.28-.46-.55-.6-.92-.11-.28-.24-.71-.28-1.49-.03-.84-.04-1.1-.04-3.23s.01-2.39.04-3.24c.04-.78.17-1.21.28-1.49.14-.38.32-.64.6-.92.28-.28.54-.46.92-.6.28-.11.7-.24 1.48-.28.85-.03 1.1-.04 3.24-.04L8 1.44zm0 2.452a4.108 4.108 0 100 8.215 4.108 4.108 0 000-8.215zm0 6.775a2.667 2.667 0 110-5.334 2.667 2.667 0 010 5.334zm5.23-6.937a.96.96 0 11-1.92 0 .96.96 0 011.92 0z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- ENQUIRIES -->
+                <div class="enquiries">
+                    <em>for enquires and support</em>
+                    <!-- call -->
+                    <div>
+                        <svg class="enquiries-icons call-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z" />
+                        </svg>
+                        <code>+234-815-4898-075</code>
+                    </div>
+                    <!-- whatsapp -->
+                    <div>
+                        <svg class="enquiries-icons whatsapp-icon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z" />
+                        </svg>
+                        <code>+234-706-5063-868</code>
+                    </div>
+                    <!-- email -->
+                    <div>
+                        <svg class="enquiries-icons email-icon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M576 480C576 515.3 547.5 544 512.1 544L128 544C92.6 544 64 515.3 64 480L64 228C64.1 212.5 71.8 198 84.5 189.2L270 61.3C300.1 40.6 339.8 40.6 369.9 61.3L555.5 189.2C568.3 198 575.9 212.5 576 228L576 480zM128 496L512.1 496C520.9 496 528 488.9 528 480L528 288.3L373.2 405.7C341.8 429.6 298.3 429.6 266.8 405.7L112 288.3L112 480C112 488.9 119.2 496 128 496zM527.6 228.4L342.7 100.8C329 91.4 311 91.4 297.3 100.8L112.4 228.4L295.8 367.5C310.1 378.3 329.9 378.3 344.2 367.5L527.6 228.4z" />
+                        </svg>
+                        <code>info@dishdashng.inc</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OPENING DAYS -->
+            <div class="opening-days">
+                <h4>Opening Days</h4>
+                <!-- underline -->
+                <div class="heading-underline"></div>
+                <!-- table -->
+                <table>
+                    <tr>
+                        <td class="day">Mondays &nbsp;</td>
+                        <td><code>8:00am</code></td>
+                        <td><code> - </code></td>
+                        <td><code>9:00pm</code></td>
+                    </tr>
+                    <tr>
+                        <td class="day">Tuesdays &nbsp;</td>
+                        <td><code>8:00am</code></td>
+                        <td><code> - </code></td>
+                        <td><code>9:00pm</code></td>
+                    </tr>
+                    <tr>
+                        <td class="day">Wednesdays &nbsp;</td>
+                        <td><code>8:00am</code></td>
+                        <td><code> - </code></td>
+                        <td><code>9:00pm</code></td>
+                    </tr>
+                    <tr>
+                        <td class="day">Thursdays &nbsp;</td>
+                        <td><code>8:00am</code></td>
+                        <td><code> - </code></td>
+                        <td><code>9:00pm</code></td>
+                    </tr>
+                    <tr>
+                        <td class="day">Fridays &nbsp;</td>
+                        <td><code>8:00am</code></td>
+                        <td><code> - </code></td>
+                        <td><code>9:00pm</code></td>
+                    </tr>
+                    <tr>
+                        <td class="day">Saturdays &nbsp;</td>
+                        <td><code>9:00am</code></td>
+                        <td><code> - </code></td>
+                        <td><code>8:00pm</code></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- SUB FOOTER -->
+        <div class="sub-footer">
+            <!-- copyright -->
+            <div class="copyright">
+                <p>&#169; Copyright <strong>DishDash<sup>&#8482;</sup></strong> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="src/home.js"></script>
+</body>
+
+</html>
