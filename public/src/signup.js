@@ -3,6 +3,7 @@ const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm-password");
 const passwordCheckbox = document.querySelector("#password-checkbox");
 
+// toggle password fn
 function togglePassword() {
   if (passwordCheckbox.checked) {
     password.setAttribute("type", "text");

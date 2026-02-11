@@ -51,6 +51,7 @@ span {
 }
 .brand-name sup {
   font-size: 16px;
+  font-weight: lighter;
 }
 .brand-name p {
   font-family: var(--default-font);

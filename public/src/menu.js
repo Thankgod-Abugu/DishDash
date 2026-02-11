@@ -25,13 +25,6 @@ function toggleCartSideBar() {
     } else {
         document.body.style.overflow = "auto";
     }
-
-    // if (!cartSideBar || !pageOverlay) return;
-
-    // cartSideBar.classList.toggle("toggle-display");
-    // pageOverlay.classList.toggle("overlay-active");
-
-    // document.body.style.overflow = cartSideBar.classList.contains("toggle-display",) ? "hidden" : "auto";
 }
 
 // 2.1 fn to add dishes to HTML
@@ -199,7 +192,7 @@ if (checkoutBtn) {
                         <p>pay has been receieved and order is on its way</p>
                     </div>`;
                 setTimeout(() => {
-                    //
+                    // refresh page
                     location.reload();
                 }, 3000);
             }, 2000);
@@ -253,7 +246,7 @@ if (dessertList) dessertList.addEventListener("click", handleAddToCartClick);
 
 // 1.1 function to get dishes from json
 const getDishes = () => {
-    fetch("dishes.json")
+    fetch("dish_database.json")
         .then((response) => response.json())
         .then((data) => {
             dishes = data;

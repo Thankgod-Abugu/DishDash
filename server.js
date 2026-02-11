@@ -6,6 +6,7 @@ import fs from "fs";
 // --- file path from c: till dishdash folder ---
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// express app
 const app = express();
 const port = 3000;
 
@@ -13,10 +14,10 @@ const port = 3000;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// --- File Path to your Users.json ---
-const USERS_FILE = `${__dirname}/users.json`;
+// --- File Path to your users_database.json ---
+const USERS_FILE = `${__dirname}/users_database.json`;
 
-// Reads the users.json file and converts the string content into a JavaScript array
+// Reads the users_database.json file and converts the string content into a JavaScript array
 function readUsers() {
   try {
     const data = fs.readFileSync(USERS_FILE, "utf8");

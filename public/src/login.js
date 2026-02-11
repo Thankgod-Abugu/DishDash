@@ -2,6 +2,7 @@
 const password = document.querySelector("#password");
 const passwordCheckbox = document.querySelector("#password-checkbox");
 
+// toggle password fn
 function togglePassword() {
   if (passwordCheckbox.checked) {
     password.setAttribute("type", "text");
@@ -18,7 +19,7 @@ function validateForm() {
   // Flag to track overall validity
   let isValid = true;
 
-  // --- 1. USERNAME VALIDATION ---
+  // USERNAME VALIDATION ---
   const userName = document.getElementById("username");
   const userNameRegEx = /^[A-Za-z]{3,20}$/;
   const userNameErr = document.getElementById("username-err");
@@ -42,7 +43,7 @@ function validateForm() {
     userNameErr.textContent = "";
   }
 
-  // --- 2. PASSWORD VALIDATION ---
+  // PASSWORD VALIDATION ---
   const password = document.getElementById("password");
   const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,16}$/;
   const passwordErr = document.getElementById("password-err");
@@ -76,7 +77,7 @@ function validateForm() {
 // SUBMIT HANDLER
 loginForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  // wait 2s before loading main web page
+  // wait 1.5s before loading main web page
   if (validateForm()) {
     setTimeout(() => {
     loginForm.submit();

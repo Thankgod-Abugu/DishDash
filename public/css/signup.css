@@ -66,6 +66,7 @@ span {
 }
 .brand-logo sup {
   font-size: 24px;
+  font-weight: lighter;
 }
 .brand-logo p {
   margin-top: 10px;
@@ -96,6 +97,7 @@ main {
 }
 .brand-name sup {
   font-size: 16px;
+  font-weight: lighter;
 }
 .brand-name p {
   font-family: var(--default-font);

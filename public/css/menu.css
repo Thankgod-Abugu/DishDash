@@ -105,9 +105,7 @@ header {
   background-color: red;
   color: white;
   font-size: 12px;
-  /* padding: 2px 4px; */
   border-radius: 50%;
-  /* font-weight: bold; */
 }
 /* MAIN */
 main {
@@ -122,7 +120,6 @@ main {
 .cart-side-bar {
   width: 100%;
   max-width: 400px;
-  /* height: 100vh; */
   background-color: var(--yellowish-white);
   position: fixed;
   top: 45px;
@@ -231,7 +228,6 @@ main {
   align-items: center;
   height: 50px;
 }
-
 .checkout-btn-container > button {
   width: 100%;
   height: 100%;
@@ -244,7 +240,6 @@ main {
 .checkout-btn-container > button:active {
   background-color: var(--dark-orange);
 }
-
 .section-container {
   padding: 0 10px 15px 10px;
   border: 1px solid var(--dark-overlay);
@@ -274,8 +269,6 @@ main {
   margin: 0 10px;
 }
 .dish {
-  /* height: inherit;
-  width: inherit; */
   height: 200px;
   border-radius: 8px;
   background-color: var(--white);
@@ -322,7 +315,6 @@ main {
 .add-to-cart-btn:active {
   background-color: var(--orange);
 }
-
 /* FOOTER */
 footer {
   width: 100%;
@@ -385,7 +377,6 @@ footer {
 }
 /* SOCIALS ICONS CONTAINER */
 .social-icons-container {
-  /* height: 100px; */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -485,7 +476,6 @@ footer {
   opacity: 1;
   pointer-events: auto; /* Makes it clickable so you can close the cart */
 }
-
 .checkout-overlay {
   display: flex;
   align-items: center;
@@ -613,28 +603,23 @@ footer {
 #pay-btn:active {
   background-color: var(--dark-orange);
 }
-
-/* ... All your previous CSS remains here ... */
-
 .success-message {
-    text-align: center;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-
 .success-message h2 {
-    color: #2a7250; 
-    font-size: 24px;
-    margin-bottom: 15px;
+  color: #2a7250;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
-
 .success-message p {
-    font-size: 16px;
-    color: var(--dark-brown);
+  font-size: 16px;
+  color: var(--dark-brown);
 }
 
 @media (max-width: 960px) {
