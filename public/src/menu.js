@@ -72,9 +72,9 @@ const handleAddToCartClick = (event) => {
 const addToCart = (dish_id) => {
     let positionThisDishInCart = carts.findIndex((value) => value.dish_id == dish_id,);
     if (carts.length <= 0) {
-        carts = [{ 
+        carts = [{
             dish_id: dish_id,
-            quantity: 1 
+            quantity: 1
         }];
     } else if (positionThisDishInCart < 0) {
         carts.push({
@@ -177,25 +177,53 @@ if (checkoutBtn) {
 
         const form = document.getElementById("checkout-form");
         const checkoutCover = document.querySelector(".checkout-cover");
-        //
+        // 10.4 listen for form submit
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             const payBtn = document.getElementById("pay-btn");
             payBtn.value = "Processing...";
             payBtn.disabled = true;
-            //
-            setTimeout(() => {
-                checkoutCover.innerHTML = `
-                    <div class="success-message">
+
+            // 10.5 Collect Data (excluding card info as requested)
+            const orderData = {
+                full_name: form.elements[0].value,
+                phone_number: form.elements[1].value,
+                location: form.elements[2].value,
+                // 10.6 Map the IDs to Names so the DB shows actual food names
+                carts: carts.map(cartItem => {
+                    const dish = dishes.find(d => d.id == cartItem.dish_id);
+                    return {
+                        name: dish ? dish.name : "Unknown Dish",
+                        quantity: cartItem.quantity,
+                        price_each: dish ? dish.price : 0
+                    };
+                }),
+                total_price: getTotalPrice()
+            };
+
+            // 10.6 Send to Node.js Server
+            fetch('/place-order', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(orderData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    checkoutCover.innerHTML = `
+                    <div class="success-message" style="text-align: center; padding: 20px;">
                         <div style="font-size: 50px; margin-bottom: 10px;">✅</div>
-                        <h2>Payment Received!</h2>
-                        <p>pay has been receieved and order is on its way</p>
+                        <h2><b>Payment Received!</b></h2>
+                        <p><b>Your order is on its way!</b></p>
                     </div>`;
-                setTimeout(() => {
-                    // refresh page
-                    location.reload();
-                }, 3000);
-            }, 2000);
+
+                    setTimeout(() => { location.reload(); }, 4000);
+                })
+                .catch(err => {
+                    console.error("Error:", err);
+                    alert("Something went wrong with the order.");
+                    payBtn.disabled = false;
+                    payBtn.value = "Retry Payment";
+                });
         });
     });
 }
@@ -246,7 +274,7 @@ if (dessertList) dessertList.addEventListener("click", handleAddToCartClick);
 
 // 1.1 function to get dishes from json
 const getDishes = () => {
-    fetch("dish_database.json")
+    fetch("dish_db.json")
         .then((response) => response.json())
         .then((data) => {
             dishes = data;
