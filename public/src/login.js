@@ -77,10 +77,7 @@ function validateForm() {
 // SUBMIT HANDLER
 loginForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  // wait 1.5s before loading main web page
   if (validateForm()) {
-    setTimeout(() => {
     loginForm.submit();
-  }, 1500);
   }
 });

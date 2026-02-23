@@ -101,10 +101,7 @@ function validateForm() {
 // SUBMIT HANDLER
 signUpForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  // wait 2s before loading login page
   if (validateForm()) {
-    setTimeout(() => {
       signUpForm.submit();
-    }, 1500);
   }
 });
