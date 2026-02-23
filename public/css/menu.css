@@ -222,23 +222,28 @@ main {
 }
 .checkout-btn-container {
   display: none;
-  padding: 0 30px 10px 30px;
+  padding: 10px 30px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 65px;
 }
 .checkout-btn-container > button {
   width: 100%;
   height: 100%;
   background-color: var(--orange);
   color: var(--white);
+  font-size: 18px;
   border-radius: 10px;
   box-shadow: rgba(208, 179, 92, 0.537) 0px 4px 10px;
   cursor: pointer;
 }
-.checkout-btn-container > button:active {
+.checkout-btn-container > button:hover {
   background-color: var(--dark-orange);
+}
+.checkout-btn-container > button:active {
+  background-color: var(--orange);
 }
 .section-container {
   padding: 0 10px 15px 10px;
@@ -537,16 +542,20 @@ footer {
 .checkout-info > h2 {
   color: var(--dark-brown);
   font-size: 20px;
-  font-weight: lighter;
 }
 .checkout-info > h2 > span {
   color: var(--orange);
+}
+.checkout-info > h2 strong {
+  font-family: var(--default-font);
+  font-weight: lighter;
 }
 .checkout-info p {
   font-size: 16px;
 }
 .checkout-info p > span {
   font-weight: bold;
+  padding: 0 2px;
 }
 .checkout-cover form {
   background-color: var(--white);
@@ -595,6 +604,7 @@ footer {
   margin-bottom: 20px;
 }
 #pay-btn {
+  font-weight: bold;
   padding: 14px;
   border: none;
   background-color: var(--orange);
@@ -605,20 +615,19 @@ footer {
 }
 .success-message {
   text-align: center;
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 100px;
   height: 100%;
 }
 .success-message h2 {
   color: #2a7250;
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 15px;
 }
 .success-message p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--dark-brown);
 }
 

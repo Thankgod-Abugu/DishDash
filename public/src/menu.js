@@ -147,25 +147,25 @@ if (checkoutBtn) {
             <div class="checkout-cover">
                 <button class="close-checkout" onclick="closeCheckout()">X</button>
                 <div class="checkout-info">
-                    <h2>Dish<span>Dash!</span> checkout</h2>
+                    <h2>Dish<span>Dash!</span><strong> checkout</strong></h2>
                     <P>Total Amount&nbsp;&nbsp;&nbsp;<span>&#8358;${formattedPrice}</span></P>
                 </div>
                 <form action="" class="form" id="checkout-form">
                     <p>Enter customer details</p>
-                    <input type="text" placeholder="Enter your full name" required>
-                    <input type="text" placeholder="Enter your phone number" required>
-                    <input type="text" placeholder="Enter your full address" required>
+                    <input type="text" minlength="10" maxlength="30" placeholder="Enter your full name" required>
+                    <input type="text" minlength="11" maxlength="11" placeholder="Enter your phone number" required>
+                    <input type="text" minlength="15" maxlength="40" placeholder="Enter your full address" required>
                     <div class="card-title">
                         <p>Enter your card details</p>
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.4 12.6h1l-.3-1.4v-.4l-.2.4-.5 1.4Z" /><path fill-rule="evenodd" d="M2 6.3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-12Zm12.5 3.2c.4 0 .8 0 1.1.2l-.1 1h-.1a2 2 0 0 0-1-.3c-.5 0-.7.3-.7.5s.2.3.7.5c.7.4 1 .8 1 1.3 0 1-.8 1.7-2.2 1.7-.6 0-1.1-.2-1.4-.3l.2-1h.1c.4.2.7.3 1.2.3.4 0 .8-.2.8-.5 0-.2-.2-.3-.7-.6-.5-.2-1.1-.6-1.1-1.3 0-.9 1-1.5 2.2-1.5Zm3.5 0h1l1 4.8h-1.2l-.2-.7H17l-.3.7h-1.3l1.9-4.4c.1-.3.3-.3.7-.3Zm-6.2 0h-1.3l-.8 4.8H11l.8-4.8Zm-4.5 3.3-.1-.7-.5-2.2c0-.3-.3-.3-.6-.4h-2v.1l1.2.5.1.2 1.1 4H8l2-4.7H8.7l-1.3 3.2Z" clip-rule="evenodd" /></svg>
                     </div>
                     <div class="card-number">
-                        <input type="text" name="card-number" size="16" placeholder="0000 0000 0000 0000" required>
+                        <input type="password" name="card-number" minlength="16" maxlength="16" size="16" placeholder="0000 0000 0000 0000" required>
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Z" clip-rule="evenodd" /></svg>
                     </div>
                     <div class="card-codes">
-                        <input type="text" size="5" placeholder="MM/YY" required>
-                        <input type="text" size="5" placeholder="cvv" required>
+                        <input type="text" minlength="5" maxlength="5" size="5" placeholder="MM/YY" required>
+                        <input type="text" minlength="3" maxlength="3" size="3" placeholder="cvv" required>
                     </div>
                     <input id="pay-btn" type="submit" value="Pay &#8358;${formattedPrice}" />
                 </form>
@@ -210,13 +210,12 @@ if (checkoutBtn) {
                 .then(response => response.json())
                 .then(data => {
                     checkoutCover.innerHTML = `
-                    <div class="success-message" style="text-align: center; padding: 20px;">
-                        <div style="font-size: 50px; margin-bottom: 10px;">✅</div>
+                    <div class="success-message">
                         <h2><b>Payment Received!</b></h2>
-                        <p><b>Your order is on its way!</b></p>
+                        <p>Your order is on its way...</p>
                     </div>`;
 
-                    setTimeout(() => { location.reload(); }, 4000);
+                    setTimeout(() => { location.reload(); }, 3000);
                 })
                 .catch(err => {
                     console.error("Error:", err);
