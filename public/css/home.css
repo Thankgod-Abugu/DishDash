@@ -24,6 +24,7 @@
 /* HTML */
 html {
   scroll-behavior: smooth;
+  scrollbar-color: rgb(252, 156, 21) #2c2c2c;
 }
 /* BODY */
 body {
