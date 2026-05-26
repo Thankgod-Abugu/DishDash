@@ -264,11 +264,6 @@ section {
   color: var(--orange);
   border: 2px solid var(--white);
 }
-/* .order-now:active {
-  border: 2px solid var(--orange);
-  background-color: var(--orange);
-  color: var(--white);
-} */
 .view-chefs {
   background-color: var(--white);
   color: var(--orange);
@@ -279,11 +274,6 @@ section {
   background-color: var(--orange);
   color: var(--white);
 }
-/* .view-chefs:active {
-  border: 2px solid var(--white);
-  background-color: var(--white);
-  color: var(--orange);
-} */
 /* ABOUT SECTION */
 /* HISTORY CONTAINER */
 .history-container {

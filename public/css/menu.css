@@ -318,9 +318,6 @@ main {
   box-shadow: rgba(208, 179, 92, 0.537) 0px 4px 10px;
   background-color: var(--dark-orange);
 }
-.add-to-cart-btn:active {
-  background-color: var(--orange);
-}
 /* FOOTER */
 footer {
   width: 100%;
