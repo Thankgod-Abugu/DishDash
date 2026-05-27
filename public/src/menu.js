@@ -152,9 +152,9 @@ if (checkoutBtn) {
                 </div>
                 <form action="" class="form" id="checkout-form">
                     <p>Enter customer details</p>
-                    <input type="text" minlength="10" maxlength="30" placeholder="Enter your full name" required>
-                    <input type="text" minlength="11" maxlength="11" placeholder="Enter your phone number" required>
-                    <input type="text" minlength="15" maxlength="40" placeholder="Enter your full address" required>
+                    <input type="text" minlength="10" maxlength="30" placeholder="your full name" required>
+                    <input type="text" minlength="11" maxlength="11" placeholder="your phone number" required>
+                    <input type="text" minlength="15" maxlength="40" placeholder="your full address" required>
                     <div class="card-title">
                         <p>Enter your card details</p>
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.4 12.6h1l-.3-1.4v-.4l-.2.4-.5 1.4Z" /><path fill-rule="evenodd" d="M2 6.3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-12Zm12.5 3.2c.4 0 .8 0 1.1.2l-.1 1h-.1a2 2 0 0 0-1-.3c-.5 0-.7.3-.7.5s.2.3.7.5c.7.4 1 .8 1 1.3 0 1-.8 1.7-2.2 1.7-.6 0-1.1-.2-1.4-.3l.2-1h.1c.4.2.7.3 1.2.3.4 0 .8-.2.8-.5 0-.2-.2-.3-.7-.6-.5-.2-1.1-.6-1.1-1.3 0-.9 1-1.5 2.2-1.5Zm3.5 0h1l1 4.8h-1.2l-.2-.7H17l-.3.7h-1.3l1.9-4.4c.1-.3.3-.3.7-.3Zm-6.2 0h-1.3l-.8 4.8H11l.8-4.8Zm-4.5 3.3-.1-.7-.5-2.2c0-.3-.3-.3-.6-.4h-2v.1l1.2.5.1.2 1.1 4H8l2-4.7H8.7l-1.3 3.2Z" clip-rule="evenodd" /></svg>
@@ -181,48 +181,17 @@ if (checkoutBtn) {
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             const payBtn = document.getElementById("pay-btn");
+            // the processing should show depending on the runtime of the transaction
             payBtn.value = "Processing...";
-            payBtn.disabled = true;
+            // payBtn.disabled = true;
 
-            // 10.5 Collect Data (excluding card info as requested)
-            const orderData = {
-                full_name: form.elements[0].value,
-                phone_number: form.elements[1].value,
-                location: form.elements[2].value,
-                // 10.6 Map the IDs to Names so the DB shows actual food names
-                carts: carts.map(cartItem => {
-                    const dish = dishes.find(d => d.id == cartItem.dish_id);
-                    return {
-                        name: dish ? dish.name : "Unknown Dish",
-                        quantity: cartItem.quantity,
-                        price_each: dish ? dish.price : 0
-                    };
-                }),
-                total_price: getTotalPrice()
-            };
+            checkoutCover.innerHTML = `
+                <div class="success-message">
+                    <h2><b>Payment Received!</b></h2>
+                    <p>Your order is on its way...</p>
+                </div>`;
 
-            // 10.6 Send to Node.js Server
-            fetch('/place-order', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(orderData)
-            })
-                .then(response => response.json())
-                .then(data => {
-                    checkoutCover.innerHTML = `
-                    <div class="success-message">
-                        <h2><b>Payment Received!</b></h2>
-                        <p>Your order is on its way...</p>
-                    </div>`;
-
-                    setTimeout(() => { location.reload(); }, 3000);
-                })
-                .catch(err => {
-                    console.error("Error:", err);
-                    alert("Something went wrong with the order.");
-                    payBtn.disabled = false;
-                    payBtn.value = "Retry Payment";
-                });
+            setTimeout(() => { location.reload(); }, 3000);
         });
     });
 }
