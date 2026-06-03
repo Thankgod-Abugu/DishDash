@@ -620,8 +620,9 @@ footer {
   height: 100%;
 }
 .success-message h2 {
-  color: #2a7250;
-  font-size: 32px;
+  font-family: 'Times New Roman';
+  color: red;
+  font-size: 28px;
   margin-bottom: 15px;
 }
 .success-message p {

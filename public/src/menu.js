@@ -191,7 +191,7 @@ if (checkoutBtn) {
                     <p>Transaction feature is still in progress...</p>
                 </div>`;
 
-            setTimeout(() => { location.reload(); }, 3000);
+            setTimeout(() => { location.reload(); }, 5000);
         });
     });
 }
