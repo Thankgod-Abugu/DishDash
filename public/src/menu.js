@@ -187,8 +187,8 @@ if (checkoutBtn) {
 
             checkoutCover.innerHTML = `
                 <div class="success-message">
-                    <h2><b>Payment Received!</b></h2>
-                    <p>Your order is on its way...</p>
+                    <h2><b>Transaction Disabled!!!</b></h2>
+                    <p>Transaction feature is still in progress...</p>
                 </div>`;
 
             setTimeout(() => { location.reload(); }, 3000);
