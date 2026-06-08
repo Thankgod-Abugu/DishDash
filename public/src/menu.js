@@ -187,7 +187,7 @@ if (checkoutBtn) {
 
             checkoutCover.innerHTML = `
                 <div class="success-message">
-                    <h2><b>Transaction Disabled!!!</b></h2>
+                    <h2><b>Transaction Disabled!</b></h2>
                     <p>Transaction feature is still in progress...</p>
                 </div>`;
 

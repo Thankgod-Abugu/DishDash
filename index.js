@@ -25,7 +25,7 @@ app.get("/menu", (req, res) => {
 });
 
 app.use((req, res) => {
-    res.status(404).send("page not found");
+    res.status(404).send("<h1>page not found</h1>");
 });
 
 app.listen(port, () => {

@@ -118,9 +118,6 @@ header {
 main {
   width: 100%;
 }
-.home-section {
-  background-image: url(../images/hero-image.png);
-}
 /* All section layouts */
 section {
   width: 100%;
@@ -156,10 +153,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url(../images/hero-image.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .hero-text-container {
   max-width: 700px;
