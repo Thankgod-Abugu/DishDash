@@ -1,5 +1,6 @@
 import express from "express";
 // import bodyParser from "body-parser";
+import ejs from "ejs";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -15,13 +16,21 @@ app.use(express.static("public"));
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve the home page
+// app.get("/", (req, res) => {
+//     res.sendFile(__dirname + "/public/home.html");
+// });
+
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/home.html");
+    res.render("index.ejs");
 });
 
 // Serve the menu page
+// app.get("/menu", (req, res) => {
+//     res.sendFile(__dirname + "/public/menu.html");
+// });
+
 app.get("/menu", (req, res) => {
-    res.sendFile(__dirname + "/public/menu.html");
+    res.render("menu.ejs");
 });
 
 app.use((req, res) => {
