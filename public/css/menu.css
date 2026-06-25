@@ -52,7 +52,6 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
-  font-weight: 400;
 }
 /* HEADER */
 header {
