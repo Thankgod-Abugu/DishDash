@@ -52,6 +52,7 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
+  font-weight: 400;
 }
 /* HEADER */
 header {
@@ -70,7 +71,7 @@ header {
 .brand-logo a {
   font-family: var(--heading-font);
   color: var(--white);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
 }
 .brand-logo span {
