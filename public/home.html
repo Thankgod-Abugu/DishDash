@@ -16,7 +16,14 @@
 </head>
 
 <!-- BODY -->
+
 <body>
+    
+    <!-- The Loading Screen Overlay -->
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p class="preloader-msg">Loading...</p>
+    </div>
 
     <!-- HEADER -->
     <header>
@@ -354,9 +361,11 @@
                             <input class="name" type="text" name="name" placeholder="Your Name" required />
                             <input class="email" type="email" name="email" placeholder="Your Email" required />
                             <input class="subject" type="text" name="subject" placeholder="Subject" required />
-                            <textarea class="message" name="message" placeholder="Write your message..." required></textarea>
+                            <textarea class="message" name="message" placeholder="Write your message..."
+                                required></textarea>
 
-                            <button class="send-msg-btn" type="submit" onclick="handleMsgSubmission()">Send Message</button>
+                            <button class="send-msg-btn" type="submit" onclick="handleMsgSubmission()">Send
+                                Message</button>
                         </form>
                     </div>
                 </div>
@@ -513,7 +522,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="src/home.js"></script>
 </body>
 

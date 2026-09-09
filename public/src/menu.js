@@ -1,3 +1,15 @@
+// Preloader dislay
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("site-content");
+
+  // Hide the preloader
+  preloader.style.display = "none";
+  
+  // Show the actual website
+  content.style.display = "block";
+});
+
 let cartSideBar = document.querySelector(".cart-side-bar");
 let pageOverlay = document.querySelector(".page-overlay");
 let cartErrMsg = document.querySelector(".cart-err-msg");

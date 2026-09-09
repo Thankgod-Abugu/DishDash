@@ -1,3 +1,15 @@
+// Preloader dislay
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("site-content");
+
+  // Hide the preloader
+  preloader.style.display = "none";
+  
+  // Show the actual website
+  content.style.display = "block";
+});
+
 /* NAVIGATION & SCROLL LOGIC */
 const pageSections = document.querySelectorAll("section");
 const allNavLinks = document.querySelectorAll(".nav-links");
